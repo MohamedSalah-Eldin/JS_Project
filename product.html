@@ -1,0 +1,105 @@
+Sure, here's an example of a buying page for a car sales website:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Sales - Buy a Car</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="logo.png" alt="Car Sales" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="buying-form">
+      <div class="container">
+        <h2>Buy a Car</h2>
+        <form action="submit_buying_form.php" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="car">Car</label>
+            <select id="car" name="car" required>
+              <option value="">Select a Car</option>
+              <option value="2019 Ford Mustang GT">2019 Ford Mustang GT</option>
+              <option value="2020 Chevrolet Camaro SS">
+                2020 Chevrolet Camaro SS
+              </option>
+              <option value="2021 Dodge Challenger SRT Hellcat">
+                2021 Dodge Challenger SRT Hellcat
+              </option>
+              <option value="2018 BMW M3">2018 BMW M3</option>
+              <option value="2022 Audi R8">2022 Audi R8</option>
+              <option value="2021 Mercedes-Benz AMG GT">
+                2021 Mercedes-Benz AMG GT
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" required readonly />
+          </div>
+          <div class="form-group">
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment" required>
+              <option value="">Select a Payment Method</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="PayPal">PayPal</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit">Buy Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2023 Car Sales</p>
+      </div>
+    </footer>
+    <script>
+      // Set the price based on the selected car
+      const carSelect = document.getElementById("car");
+      const priceInput = document.getElementById("price");
+      carSelect.addEventListener("change", () => {
+        const carPrice = parseInt(carSelect.value.slice(-6));
+        priceInput.value = `$${carPrice.toLocaleString()}`;
+      });
+    </script>
+  </body>
+</html>
+
+
+
