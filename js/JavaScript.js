@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let login_BTN = document.getElementById("loginBTN");
   let mailLogin = document.getElementById("EmailLogin_Id");
   let loginPwd = document.getElementById("passwordLogin_id");
+
   ///////////////////////////////add signup data to local storage////////////////////
   //signup_BTN.addEventListener("click", saveUsrData);
 
@@ -61,18 +62,42 @@ document.addEventListener("DOMContentLoaded", () => {
       //window.location.replace('http://127.0.0.1:5501/home.html');
     }
   }
+  var loginState = false;
 
   ///////////////////////////////get login data from local storage////////////////////
   login_BTN.addEventListener("click", Login);
 
   function Login() {
+    loginState = true;
     let userinfo = JSON.parse(window.localStorage.getItem(mailLogin.value));
     if (userinfo !== null && userinfo[1] === loginPwd.value) {
       location.assign('../home.html');
-      loginState = true;
-      
     } else {
-      console.log("الايميل اللي بايظ ,علط يا نجم ");
+      alert("incorrect password or email");
+    loginState = false;
+    }
+    return loginState;
+  }
+
+  let signBTN = document.getElementById("userlink");
+
+  function xloading(loginState){
+    if(loginState){
+      signBTN.innerHTML ='SignOut';
+    }
+    else{
+      signBTN.innerHTML='SignIn';
     }
   }
+
+function changeState(loginState){
+   loginState = false;
+   return loginState; 
+}
+
+  signBTN.addEventListener("click",changeState(loginState));
+  
 });
+
+
+
