@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let signup_BTN = document.getElementById("signupBTN");
   let login_BTN = document.getElementById("loginBTN");
   let mailLogin = document.getElementById("EmailLogin_Id");
-let loginPwd = document.getElementById("passwordLogin_id");
+  let loginPwd = document.getElementById("passwordLogin_id");
   ///////////////////////////////add signup data to local storage////////////////////
   //signup_BTN.addEventListener("click", saveUsrData);
 

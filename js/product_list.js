@@ -6,8 +6,7 @@ let signBTN = document.getElementById("userlink");
 
 function xloading(loginState){
   if(loginState){
-    signBTN.innerHTML = 'signOut';
-    loginState = false;
+    signBTN.innerText = 'signOut';
   }
 }
 
