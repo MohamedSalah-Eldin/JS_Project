@@ -103,7 +103,61 @@ min-height: 100%;
     padding: 20px;
   }
 
-footer {
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(https://images.unsplash.com/photo-1627913434632-b4717be3485a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    grid-gap: 20px;
+    height: 400px;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 1rem;
+  }
+
+  
+  .header {
+
+    
+    background-color: #30302d0c;
+    padding: 3px 0%;
+    display: inline-flex;
+    width: 650px;
+    backdrop-filter: blur(12px);
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .header span{
+    font-size: 4em;
+    color: #fff;
+    text-shadow:10px 10px 10px #7d7d83;
+
+  }
+
+  .header:hover{
+    backdrop-filter: blur(2px);
+    transition: 0.7s;
+    transform: scale(108%);
+  }
+  .header:hover::after{
+    transition: 1s;
+    
+  }
+ 
+
+
+  
+
+
+  
+
+
+  footer {
     background-color: #B6EADA;
     color: #03001C;
     text-align: center;
@@ -122,49 +176,3 @@ footer {
     background-color: #B6EADA;
     color: #000;
   }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto 1fr auto;
-    background-image: url();
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  
-  .header {
-    grid-area: header;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-  
-
-  
- 
-  .footer {
-    grid-area: footer;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-
-  
-
-
