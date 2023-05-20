@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         userinfo.push(usrname.value);
         userinfo.push(psswod.value);
         window.localStorage.setItem(mail.value, JSON.stringify(userinfo));
+          alert("Signed up successfully go to sign in");
       }else 
       alert("Enter a valid Email");
     }
