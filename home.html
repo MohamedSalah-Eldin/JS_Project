@@ -11,62 +11,65 @@
     <!--styling css-->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favi.gif" />
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg" />
 
     <title id="title"></title>
   </head>
 
   <body onload=xloading(loginState)>
-    <div>
-      <video autoplay muted loop>
-        <source src="/images/backhround.mp4" type="video/mp4"></source>
-      </video>
-      </div>
-<br>
-
-    <nav>
-      <img height="99" width="110" src="images/logo.jpg" />
-      <input type="text" b placeholder="Search for a Car" />
-      <a href="login.html" id="userlink">SignOUT</a>
-      <span id= "userName"></span>
-      <br>
-      <br>
-    </nav>
    
-    
 
-   <div class="container">
+    <nav >
+      <img height="99" width="110" src="images/logo.jpg"  id="logo"/>
+      <input type="text" b placeholder="Search for a Car" />
+
+      <a href="login.html" id="userlink">SignOUT</a>
+      <a href="settings.html" id="userName">$userName</a>
+
+   
+    </nav>
+
+    <video  id="top" autoplay muted loop>
+      <source src="/images/background2.mp4" type="video/mp4"/>
+    </video>
+    <div class="content">
+    
+      <h1>What we provides...</h1>
+      <p>in our shop we provides </p>
+      <a href="#acessories">Car Accessories</a>
+      <a href="#spare">Cars Spare Parts</a>
+      <a href="#Models">Various Models</a>
+      <a href="#maintainace">Car Maintenance</a>
+
+    </div>
+
+   <div class="container" id="acessories">
     <div class="header"><span>Car Accessories</span></div>
-  
   </div>
 
 
+  <div class="container" id="spare">
+    <div class="header"><span>Car Spare Parts</span></div>
+  </div>
 
 
+  <div class="container" id="Models">
+    <div class="header"><span>Car Models</span></div>
+  </div>
+
+  <div class="container" id="maintainace">
+    <div class="header"><span>Car Maintenance</span></div>
+  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
    <footer>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi odio eaque provident. Repellendus eaque quasi quisquam asperiores laboriosam autem corporis amet nulla. A nobis adipisci iusto dolorum? Harum, cupiditate.</p>
-    <p><a href="About.html">about us</a></p>
+
+    <p>
+      <a href="#top">Back to top</a>
+      <a href="About.html">Values</a>
+      <a href="About.html">who we are</a>
+      <a href="About.html">about us</a></p>
     <p>Copyright © 2023 <br>Eslam Yaaser<br>Mohammed salah</p>
   </footer>
    <script src="js/JavaScript.js"></script>

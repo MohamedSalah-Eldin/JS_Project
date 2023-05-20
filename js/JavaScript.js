@@ -79,24 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return loginState;
   }
 
-  let signBTN = document.getElementById("userlink");
 
-  function xloading(loginState){
-    if(loginState){
-      signBTN.innerHTML ='SignOut';
-    }
-    else{
-      signBTN.innerHTML='SignIn';
-    }
-  }
-
-function changeState(loginState){
-   loginState = false;
-   return loginState; 
-}
-
-  signBTN.addEventListener("click",changeState(loginState));
-  
 });
 
 
