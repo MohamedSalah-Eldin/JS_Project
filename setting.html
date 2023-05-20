@@ -10,7 +10,7 @@
 
     <!--styling css-->
     <!-- <link rel="stylesheet" href="css/all.min.css"> -->
-    <link rel="stylesheet" href="css/Login_SignUp.css">
+    <link rel="stylesheet" href="css/setting.css">
     <!-- <link rel="icon" type="image/x-icon" href="/images/favi.gif" /> -->
 
     <title>SignUp Now</title>
@@ -18,27 +18,44 @@
 
 
 <body>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+    <div class="content">
+    <video  id="top" autoplay muted loop>
+        <source src="/images/background2.mp4" type="video/mp4"/>
+      </video>
+  
     <form>
-        <h2>Sign Up</h2>
-
+        <h2>Change Account Details for<span id="SETuserName"></span></h2>
+        <label for="userPic">Upload a photo of yours</label>
+        <input type="file" id="userPic">
         <label for="SETusername">Username</label>
-        <input type="text" placeholder="Enter your Username" id="SETusernameId" required>
+        <input type="text" placeholder="Enter your New Username" id="SETusernameId" required>
 
         <label for="email">Email</label>
         <input type="email" placeholder="Enter your Email " id="SETemailId" required>
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Enter a password" id="SETpasswordId" required>
+        <input type="password" placeholder="Enter the new Password" id="SETpasswordId" required>
+    
 
-        <button id="signupBTN">Sign Up</button>
-        <label>You have account already <a href="login.html">Sign in</a></label>
+        <button id="signupBTN">Assign</button>
 
        
     </form>
-    <script src="js/JavaScript.js"></script>
+</div>
+
+
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi odio eaque provident. Repellendus eaque quasi quisquam asperiores laboriosam autem corporis amet nulla. A nobis adipisci iusto dolorum? Harum, cupiditate.</p>
+    
+        <p>
+          <a href="#top">Back to top</a>
+          <a href="About.html">Values</a>
+          <a href="About.html">who we are</a>
+          <a href="About.html">about us</a></p>
+        <p>Copyright © 2023 <br>Eslam Yaaser<br>Mohammed salah</p>
+      </footer>
+
+    <script src=""></script>
 </body>
 </html>
