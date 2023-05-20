@@ -1,6 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  let loginState = sessionStorage.getItem('Islogin');
 
 
   let signBTN = document.getElementById("userlink");
