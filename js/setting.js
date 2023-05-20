@@ -39,5 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       console.log("Error: HTML element not found");
     }
+
+    signBTN.addEventListener("click", function () {
+      if (Boolean(loginState)) {
+          loginState = false;
+          location.assign("../login.html");
+          sessionStorage.clear();
+      }
+    });
+    
   });
 
