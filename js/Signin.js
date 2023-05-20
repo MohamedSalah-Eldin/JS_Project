@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (userinfo !== null && userinfo[1] === loginPwd.value) {
       sessionStorage.setItem("IsLogin", true);
       sessionStorage.setItem("LoginUserName", userinfo[0]);
-      location.assign('../home.html');
+      location.assign('../index.html');
     } else {
       alert("incorrect password or email");
     }
