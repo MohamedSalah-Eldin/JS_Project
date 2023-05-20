@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let signBTN = document.getElementById("userlink");
   let NavUsername = document.getElementById("userName");
   let acessoriesBTN = document.getElementById("acessories");
+  let spare = document.getElementById('spare')
+  let Models = document.getElementById('Models');
+  let maintainace = document.getElementById('maintainace')
 
   function xloading() {
     console.log("xloading function called");
@@ -25,6 +28,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   acessoriesBTN.addEventListener("click", function () {
+    if (Boolean(loginState)) {
+      
+        location.assign("../product.html");
+     }else{
+        location.assign("../login.html");
+        sessionStorage.clear();
+    }
+  });
+
+
+  spare.addEventListener("click", function () {
+    if (Boolean(loginState)) {
+      
+        location.assign("../product.html");
+     }else{
+        location.assign("../login.html");
+        sessionStorage.clear();
+    }
+  }); 
+  Models.addEventListener("click", function () {
+    if (Boolean(loginState)) {
+      
+        location.assign("../product.html");
+     }else{
+        location.assign("../login.html");
+        sessionStorage.clear();
+    }
+  }); 
+  maintainace.addEventListener("click", function () {
     if (Boolean(loginState)) {
       
         location.assign("../product.html");
