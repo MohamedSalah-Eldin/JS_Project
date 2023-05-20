@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   maintainace.addEventListener("click", function () {
     if (Boolean(loginState)) {
       
-        location.assign("product.html");
+        location.assign("../product.html");
      }else{
         location.assign("../login.html");
         sessionStorage.clear();
