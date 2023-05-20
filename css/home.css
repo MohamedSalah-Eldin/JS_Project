@@ -48,7 +48,7 @@ video {
 }
 
 .content a {
-  background-color: #139433;
+  background-color: #4c1414;
   color: #dcdbe2;
   padding: 0.8rem;
   margin: 1rem 0.3rem;
@@ -57,7 +57,7 @@ video {
   transition: 0.8s;
 }
 .content a:hover {
-  background-color: #1394334b;
+  background-color: #a639264b;
   transition: 0.8s;
 }
 
@@ -216,4 +216,76 @@ footer p a {
 footer p a:hover {
   background-color: #000000;
   transition: 0.8s;
+}
+
+
+/* ///////////////////////////////Product CSS///////////////////// */
+
+
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #240101;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float:left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* .row {margin: 0 -5px;} */
+
+.row:after {
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  max-width: 400px;
+  margin: auto;
+  font-family: arial;
+  border: 50px;
+  padding: 16px;
+  text-align: center;
+  background: #8E0E00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  box-shadow: 4px 4px 20px #7d7d839c;
+  transition: 0.9s;
+  border-radius: 20px;
+}
+
+.card:hover{
+  transform: scale(104%);
+  transition: 0.9s;
+  box-shadow: 0px 0px 3px #ffffff9c;
+  border: 50px;
+
+
 }
