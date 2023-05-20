@@ -13,9 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
         userinfo.push(SETusername.value);
         userinfo.push(SETpassword.value);
         window.localStorage.setItem(SETemail.value, JSON.stringify(userinfo));
-    }
-  
-
-
-    
+    }   
 });

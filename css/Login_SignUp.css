@@ -97,13 +97,13 @@ input{
     margin-bottom: 30px;
 }
 #loginBTN{
-    margin: 10px 0%;
+    margin: 10px 0px;
     background-color: #eaf0fb;
     color: #080710;
     cursor: pointer;
-    padding: 10px 44%;
+    padding: 10px 50px;
     border-radius: 6px;
-    box-shadow: 1px 1px 10px #f09819;
+    box-shadow: 1px 1px 10px #cc8b24;
 }
 
 #loginBTN:hover{
