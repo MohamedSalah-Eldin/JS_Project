@@ -62,13 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
       //window.location.replace('http://127.0.0.1:5501/home.html');
     }
   }
-  var loginState = false;
 
   ///////////////////////////////get login data from local storage////////////////////
   login_BTN.addEventListener("click", Login);
 
   function Login() {
-    loginState = true;
     let userinfo = JSON.parse(window.localStorage.getItem(mailLogin.value));
     if (userinfo !== null && userinfo[1] === loginPwd.value) {
       sessionStorage.setItem("IsLogin", true);
@@ -76,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
       location.assign('../home.html');
     } else {
       alert("incorrect password or email");
-    loginState = false;
     }
     return loginState;
   }
