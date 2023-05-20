@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let userinfo = JSON.parse(window.localStorage.getItem(mailLogin.value));
     if (userinfo !== null && userinfo[1] === loginPwd.value) {
       sessionStorage.setItem("IsLogin", true);
+      sessionStorage.setItem("LoginUserName", userinfo[0]);
       location.assign('../home.html');
     } else {
       alert("incorrect password or email");

@@ -2,31 +2,23 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   let loginState = sessionStorage.getItem('Islogin');
-
-
+  let LoginUserName = sessionStorage.getItem('LoginUserName')
   let signBTN = document.getElementById("userlink");
   let NavUsername = document.getElementById("userName");
 
-  function xloading(loginState){
-    if(loginState){
+  
+
+  function xloading(){
+    if(loginState==true){
       signBTN.innerHTML ='SignOut';
-      NavUsername.innerHTML = userInfo;
+      NavUsername.innerHTML = LoginUserName;
     }
     else{
       signBTN.innerHTML='SignIn';
-      NavUsername.style.visibility = false;
+      NavUsername.innerHTML='';
     }
   }
-  
-  function changeState(loginState){
-   loginState = false;
-   return loginState; 
-  }
-  
-  signBTN.addEventListener("click",changeState(loginState));
-  
-
-
+  object.addEventListener("load",xloading() );
 });
 
 
