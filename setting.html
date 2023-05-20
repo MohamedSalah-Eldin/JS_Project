@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
-      <script src="/js/html5shiv.js"></script>
+    <script src="/js/html5shiv.js"></script>
     <![endif]-->
 
     <!--styling css-->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/setting.css" />
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/Login_SignUp.css">
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favi.gif" /> -->
 
-    <link rel="icon" type="image/x-icon" href="/images/logo.jpg" />
+    <title>SignUp Now</title>
+</head>
 
-    <title id="title"></title>
-  </head>
 
-  <body>
-    <nav>
-      <img height="99" width="110" src="images/logo.jpg" id="logo" />
-      <input type="text" b placeholder="Search for a Car" />
-
-      <a href="login.html" id="userlink">Return to Home Page</a>
-      <a href="home.html" id="userName">dd</a>
-    </nav>
-
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
     <form>
-      <label for="fullName">Full Name</label>
-      <input type="text" class="form-control" id="fullName" />
+        <h2>Sign Up</h2>
 
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" />
+        <label for="SETusername">Username</label>
+        <input type="text" placeholder="Enter your Username" id="SETusernameId" required>
 
-      <label for="pass">Password</label>
-      <input type="password" class="form-control" id="pass" />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your Email " id="SETemailId" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter a password" id="SETpasswordId" required>
+
+        <button id="signupBTN">Sign Up</button>
+        <label>You have account already <a href="login.html">Sign in</a></label>
+
+       
     </form>
-  </body>
+    <script src="js/JavaScript.js"></script>
+</body>
 </html>
