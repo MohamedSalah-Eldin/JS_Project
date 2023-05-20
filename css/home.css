@@ -20,7 +20,6 @@ body {
   background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-
   
   
 }
@@ -133,6 +132,7 @@ nav a:hover {
 }
 
 .container {
+  border-radius: 15px;
   display: block;
   background-image: url(https://images.unsplash.com/photo-1627913434632-b4717be3485a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
   background-size: cover;
@@ -225,16 +225,17 @@ footer p a:hover {
 
 
 .price {
-  color: grey;
+  color: rgb(49, 1, 1);
   font-size: 22px;
 }
 
 .card button {
+  
   border: none;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #240101;
+  background-color: #512020;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -272,10 +273,14 @@ footer p a:hover {
   border: 50px;
   padding: 16px;
   text-align: center;
-  background: #8E0E00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+  background: #dfbfbc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9f7743, #e86556);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #555453, #e09b93); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
+
+
+
   box-shadow: 4px 4px 20px #7d7d839c;
   transition: 0.9s;
   border-radius: 20px;
