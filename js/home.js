@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   signBTN.addEventListener("click",function(){sessionStorage.setItem("IsLogin", false);
-});
+      loginState = false;
+      sessionStorage.clear();
+          });
 
   if (signBTN && NavUsername) { // check if elements are found
     window.addEventListener("load", xloading);
